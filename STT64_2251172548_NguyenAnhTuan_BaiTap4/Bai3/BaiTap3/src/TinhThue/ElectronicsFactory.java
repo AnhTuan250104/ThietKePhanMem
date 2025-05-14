@@ -1,7 +1,6 @@
 package TinhThue;
 
-public class ElectronicsFactory implements ItemFactory {
-    @Override
+public class ElectronicsFactory {
     public TaxableItem createItem(double price) {
         return new Electronics(price);
     }
