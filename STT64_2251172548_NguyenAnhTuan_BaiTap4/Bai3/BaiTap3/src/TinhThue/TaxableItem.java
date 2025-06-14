@@ -1,5 +1,5 @@
 package TinhThue;
 
-public abstract class TaxableItem {
-    public abstract double CalculateTax();
+public interface TaxableItem {
+    double CalculateTax();
 }

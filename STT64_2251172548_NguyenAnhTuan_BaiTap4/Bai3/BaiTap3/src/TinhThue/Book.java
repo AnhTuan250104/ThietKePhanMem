@@ -1,12 +1,13 @@
 package TinhThue;
 
-public class Book extends TaxableItemImpl {
+public class Book implements TaxableItem {
+    private double price;
+
     public Book(double price) {
-        super(price);
+        this.price = price;
     }
 
-    @Override
     public double CalculateTax() {
-        return price * 0.05; 
+        return price * 0.05; // Ví dụ: thuế 5% cho sách
     }
 }

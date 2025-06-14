@@ -1,12 +1,13 @@
 package TinhThue;
 
-public class Electronics extends TaxableItemImpl {
+public class Electronics implements TaxableItem {
+    private double price;
+
     public Electronics(double price) {
-        super(price);
+        this.price = price;
     }
 
-    @Override
     public double CalculateTax() {
-        return price * 0.1;
+        return price * 0.1; // Ví dụ: thuế 10% cho electronics
     }
 }

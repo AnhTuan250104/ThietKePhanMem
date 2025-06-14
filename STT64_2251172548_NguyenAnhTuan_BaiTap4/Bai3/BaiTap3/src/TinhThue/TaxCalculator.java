@@ -2,7 +2,7 @@ package TinhThue;
 
 public class TaxCalculator {
     public double CalculateTotalTax(TaxableItem[] items) {
-        double totalTax = 0.0;
+        double totalTax = 0;
         for (TaxableItem item : items) {
             totalTax += item.CalculateTax();
         }
